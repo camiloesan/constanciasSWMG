@@ -1,4 +1,4 @@
-package com.swmg.constanciasswmg.controllers;
+package com.swmg.constanciasswmg.gui;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -53,7 +53,7 @@ public class MainStage extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("src/main/resources/com/swmg/constanciasswmg/views/login-view.fxml"), 600, 400);
+        scene = new Scene(loadFXML("login-view.fxml"), 800, 600);
         stage.setTitle("Sistema de generación de constancias");
         stage.setScene(scene);
         stage.show();
