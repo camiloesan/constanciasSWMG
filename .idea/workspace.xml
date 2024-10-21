@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f645c828-4b1e-4e8b-a7b7-889eef41320c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/swmg/constanciasswmg/gui/HistorialConstanciasController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swmg/constanciasswmg/gui/HistorialConstanciasController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/swmg/constanciasswmg/gui/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swmg/constanciasswmg/gui/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/swmg/constanciasswmg/gui/MainStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swmg/constanciasswmg/gui/MainStage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/swmg/constanciasswmg/gui/historial-constancias-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/swmg/constanciasswmg/gui/historial-constancias-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/swmg/constanciasswmg/gui/login-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/swmg/constanciasswmg/gui/login-view.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="f645c828-4b1e-4e8b-a7b7-889eef41320c" name="Changes" comment="boton regresar regresa" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,11 +107,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729536417329</updated>
-      <workItem from="1729536418382" duration="4812000" />
+      <workItem from="1729536418382" duration="4973000" />
     </task>
+    <task id="LOCAL-00001" summary="boton regresar regresa">
+      <option name="closed" value="true" />
+      <created>1729541523949</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729541523949</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="boton regresar regresa" />
+    <option name="LAST_COMMIT_MESSAGE" value="boton regresar regresa" />
   </component>
 </project>
