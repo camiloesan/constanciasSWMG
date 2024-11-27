@@ -1,5 +1,7 @@
 package com.swmg.constanciasswmg.pojo;
 
+import java.sql.Date;
+
 public class Solicitudes {
     private int id;
     private int idTipoConstancia;
@@ -7,13 +9,13 @@ public class Solicitudes {
     private int idDocente;
     private String nombreDocente;
     private String apellidosDocente;
-    private String fechaSolicitud;
+    private Date fechaSolicitud;
 
     public Solicitudes() {
 
     }
 
-    public Solicitudes(int id, int idTipoConstancia, int idDocente, String nombreDocente, String apellidosDocente, String fechaSolicitud) {
+    public Solicitudes(int id, int idTipoConstancia, int idDocente, String nombreDocente, String apellidosDocente, Date fechaSolicitud) {
         this.id = id;
         this.idTipoConstancia = idTipoConstancia;
         this.idDocente = idDocente;
@@ -54,11 +56,11 @@ public class Solicitudes {
         this.apellidosDocente = apellidosDocente;
     }
 
-    public String getFechaSolicitud() {
+    public Date getFechaSolicitud() {
         return fechaSolicitud;
     }
 
-    public void setFechaSolicitud(String fechaSolicitud) {
+    public void setFechaSolicitud(Date fechaSolicitud) {
         this.fechaSolicitud = fechaSolicitud;
     }
 

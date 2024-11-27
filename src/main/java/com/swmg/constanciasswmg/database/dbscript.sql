@@ -112,7 +112,11 @@ INSERT INTO experiencias_educativas (nombre) VALUES
 INSERT INTO cuentas (id_tipo_cuenta, email, contrasena, no_trabajador) VALUES
 (2, 'docente1@example.com', 'aaa', 2003),
 (2, 'docente2@example.com', 'aaa', 2004),
-(2, 'docente3@example.com', 'aaa', 2005);
+(2, 'docente3@example.com', 'aaa', 2005),
+(1, 'admin@example.com', 'aaa', 2006);
+
+INSERT INTO administrativos (id_cuenta, nombre, apellidos, telefono) VALUES
+(4, 'jorge', 'sanchez', '8282828282');
 
 INSERT INTO docentes (id_cuenta, nombre, apellidos, telefono, firma_digital) VALUES
 (1, 'Chris', 'Taylor', '5553334455', 'signature3'),

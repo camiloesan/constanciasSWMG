@@ -6,6 +6,11 @@ public class TipoConstancias {
 
     public TipoConstancias() {}
 
+    @Override
+    public String toString() {
+        return nombreTipoConstancia; // Display only the name attribute
+    }
+
     public TipoConstancias(int idTipoConstancia, String nombreTipoConstancia) {
         this.idTipoConstancia = idTipoConstancia;
         this.nombreTipoConstancia = nombreTipoConstancia;

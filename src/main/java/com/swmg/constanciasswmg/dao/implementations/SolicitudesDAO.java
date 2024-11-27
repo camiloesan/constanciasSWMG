@@ -29,7 +29,7 @@ public class SolicitudesDAO implements ISolicitudesDAO {
             solicitudes.setId(resultSet.getInt("id_solicitud"));
             solicitudes.setNombreDocente(resultSet.getString("nombre"));
             solicitudes.setApellidosDocente(resultSet.getString("apellidos"));
-            solicitudes.setFechaSolicitud(String.valueOf(resultSet.getDate("fecha_solicitud")));
+            solicitudes.setFechaSolicitud(resultSet.getDate("fecha_solicitud"));
             solicitudesList.add(solicitudes);
         }
 
@@ -51,7 +51,7 @@ public class SolicitudesDAO implements ISolicitudesDAO {
         List<Solicitudes> solicitudesList = new ArrayList<>();
         while (resultSet.next()) {
             Solicitudes solicitudes = new Solicitudes();
-            solicitudes.setFechaSolicitud(String.valueOf(resultSet.getDate("fecha_solicitud")));
+            solicitudes.setFechaSolicitud(resultSet.getDate("fecha_solicitud"));
             solicitudes.setTipoConstancia(resultSet.getString("tipo_constancia"));
             solicitudes.setId(resultSet.getInt("id_solicitud"));
             solicitudesList.add(solicitudes);

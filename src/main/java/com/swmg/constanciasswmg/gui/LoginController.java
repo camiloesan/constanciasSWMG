@@ -63,6 +63,6 @@ public class LoginController {
             throw new RuntimeException(e);
         }
 
-        return true;
+        return result;
     }
 }
