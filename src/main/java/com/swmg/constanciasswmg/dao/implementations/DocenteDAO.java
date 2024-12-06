@@ -76,4 +76,61 @@ public class DocenteDAO implements IDocenteDAO {
 
         return docentes;
     }
+
+    @Override
+    public int[] availableKindOfDocument(int idTeacher) throws SQLException {
+        Connection connection = DataAccess.getConnection();
+
+        int[] documentTypes = new int[4];
+
+        String queryDocenteProyecto = "SELECT COUNT(*) FROM docenteproyecto WHERE id_docente = ?";
+        String queryDocenteTrabajoRecepcional = "SELECT COUNT(*) FROM docentetrabajorecepcional WHERE id_docente = ?";
+        String queryParticipacionEE = "SELECT COUNT(*) FROM participacionee WHERE id_docente = ?";
+        String queryParticipacionPladea = "SELECT COUNT(*) FROM participacionpladea WHERE id_docente = ?";
+
+        String[] queries = {
+                queryDocenteProyecto,
+                queryDocenteTrabajoRecepcional,
+                queryParticipacionEE,
+                queryParticipacionPladea
+        };
+
+        for (int i = 0; i < queries.length; i++) {
+            PreparedStatement preparedStatement = connection.prepareStatement(queries[i]);
+            preparedStatement.setInt(1, idTeacher);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            if (resultSet.next() && resultSet.getInt(1) > 0) {
+                documentTypes[i] = 1;
+            }
+            resultSet.close();
+            preparedStatement.close();
+        }
+
+        connection.close();
+        return documentTypes;
+    }
+
+    @Override
+    public String getNombreDeDocenteByID(int idDocente) throws SQLException {
+        Connection connection = DataAccess.getConnection();
+
+        String query = "SELECT CONCAT(nombre, ' ', apellidos) AS nombreCompleto FROM docentes WHERE id_docente = ?";
+        PreparedStatement preparedStatement = connection.prepareStatement(query);
+        preparedStatement.setInt(1, idDocente);
+
+        ResultSet resultSet = preparedStatement.executeQuery();
+        String nombreCompleto = null;
+
+        if (resultSet.next()) {
+            nombreCompleto = resultSet.getString("nombreCompleto");
+        }
+
+        resultSet.close();
+        preparedStatement.close();
+        connection.close();
+
+        return nombreCompleto;
+    }
+
+
 }

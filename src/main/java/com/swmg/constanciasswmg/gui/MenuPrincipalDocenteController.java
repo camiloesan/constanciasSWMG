@@ -14,7 +14,7 @@ public class MenuPrincipalDocenteController {
     }
 
     @FXML
-    private void generarConstancia() {
-//        MainStage.changeView("historial-constancias-view.fxml", 800, 600);
+    private void consultarMenuGenerarConstancia() {
+        MainStage.changeView("menu-generar-contancia.fxml", 800, 600);
     }
 }

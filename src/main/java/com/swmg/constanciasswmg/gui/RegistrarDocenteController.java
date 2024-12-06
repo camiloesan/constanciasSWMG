@@ -50,6 +50,7 @@ public class RegistrarDocenteController {
             alert.setTitle("Registro de Docente");
             alert.setHeaderText("Registro de Docente");
             alert.setContentText("Docente registrado exitosamente");
+            MainStage.changeView("menu-principal-admin-view.fxml", 800, 600);
         } else {
             alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");

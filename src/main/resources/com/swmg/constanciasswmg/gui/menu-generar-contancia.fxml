@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.swmg.constanciasswmg.gui.MenuGenerarContanciaController">
+   <children>
+      <TabPane layoutX="14.0" layoutY="105.0" prefHeight="477.0" prefWidth="768.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="tabPladea" text="Pladea">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tvPladea" layoutX="14.0" layoutY="14.0" prefHeight="343.0" prefWidth="739.0">
+                          <columns>
+                            <TableColumn fx:id="colEjeEstrategico" prefWidth="137.0" text="Eje Estrategico" />
+                            <TableColumn fx:id="colNombrePrograma" prefWidth="146.0" text="Nombre programa" />
+                              <TableColumn fx:id="colObjetivosGenerales" prefWidth="175.0" text="Objetivos generales" />
+                              <TableColumn fx:id="colAcciones" prefWidth="133.0" text="Acciones" />
+                              <TableColumn fx:id="colMetas" prefWidth="147.0" text="Metas" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="btnGenerarConstanciaPladea" layoutX="311.0" layoutY="374.0" mnemonicParsing="false" onAction="#GenerarConstanciaPladea" text="Generar constancia" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="tabEE" text="Imparticion EE">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tvImparticionEE" layoutX="14.0" layoutY="14.0" prefHeight="343.0" prefWidth="739.0">
+                          <columns>
+                            <TableColumn fx:id="colNombreEE" prefWidth="303.0" text="Nombre Experiencia Educativa" />
+                            <TableColumn fx:id="colProgramaE" prefWidth="296.0" text="Programa Educativo" />
+                              <TableColumn fx:id="colBloque" prefWidth="139.0" text="Bloque" />
+                          </columns>
+                        </TableView>
+                        <Button layoutX="311.0" layoutY="374.0" mnemonicParsing="false" onAction="#GenerarConstanciaEE" text="Generar Constancia" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+          <Tab fx:id="tabProyecto" text="Proyecto">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tvProyecto" layoutX="14.0" layoutY="14.0" prefHeight="343.0" prefWidth="739.0">
+                          <columns>
+                            <TableColumn fx:id="colNombreProyecto" prefWidth="319.0" text="Nombre del proyecto" />
+                            <TableColumn fx:id="colDuracion" prefWidth="232.0" text="Duración" />
+                              <TableColumn fx:id="colLugar" prefWidth="187.0" text="Lugar" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="GenerarConstanciaProyecto" onAction="#GenerarConstanciaProyecto" layoutX="311.0" layoutY="374.0" mnemonicParsing="false" text="Generar Constancia" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutX="197.0" layoutY="14.0" prefHeight="73.0" prefWidth="406.0" text="Generar contancia">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnVolver" layoutX="25.0" layoutY="35.0" mnemonicParsing="false" onAction="#volverMenuDocente" text="Volver" />
+   </children>
+</AnchorPane>

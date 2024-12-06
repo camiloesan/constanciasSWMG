@@ -45,7 +45,7 @@ public class CuentaDAO implements ICuentaDAO {
     @Override
     public int getDocenteIdByEmail(String email) throws SQLException {
         Connection connection = DataAccess.getConnection();
-        String query = "select docentes.id_docente as id_docente from cuentas join docentes where email = ?";
+        String query = "SELECT docentes.id_docente AS id_docente FROM cuentas JOIN docentes ON cuentas.id_cuenta = docentes.id_cuenta WHERE email = ?";
         PreparedStatement statement = connection.prepareStatement(query);
         statement.setString(1, email);
         ResultSet resultSet = statement.executeQuery();
